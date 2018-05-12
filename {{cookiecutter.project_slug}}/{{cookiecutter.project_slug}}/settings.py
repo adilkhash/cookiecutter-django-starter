@@ -29,7 +29,8 @@ INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS
 {%- if cookiecutter.use_rq == 'y' %}
 INSTALLED_APPS += [
     'django_rq',
-    'django_rq_dashboard'
+    'django_rq_dashboard',
+    'scheduler',
 ]
 {%- endif %}
 

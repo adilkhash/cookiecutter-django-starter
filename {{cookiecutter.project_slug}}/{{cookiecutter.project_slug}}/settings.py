@@ -35,7 +35,7 @@ INSTALLED_APPS += [
 {%- endif %}
 
 {%- if cookiecutter.use_sentry == 'y' %}
-INSTALLED_APPS += ['raven']
+INSTALLED_APPS += ['raven.contrib.django.raven_compat']
 {%- endif %}
 
 MIDDLEWARE = [
